@@ -2,6 +2,8 @@ import { Legend, RadialBar, RadialBarChart, Tooltip } from "recharts"
 
 export const ChartRadial = () => {
     return (
+      <div className="left">
+        <h2>Money Allocation</h2>
         <RadialBarChart
             width={730}
             height={500}
@@ -9,12 +11,12 @@ export const ChartRadial = () => {
             outerRadius="80%"
             data={data}
             startAngle={180}
-            endAngle={-180}
-        >
+            endAngle={-180}>
             <RadialBar minAngle={15} background clockWise={true} dataKey='uv' />
-            <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' align="right" />
+            <Legend iconSize={5} width="100%" height={50} layout='horizontal' verticalAlign ="bottom" align="center" />
             <Tooltip />
         </RadialBarChart>
+      </div>
     )
 }
 const data = [
