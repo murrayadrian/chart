@@ -1,6 +1,5 @@
 import React from 'react'
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts'
-import styled from 'styled-components'
 
 export const ChartBar = () => {
     return (

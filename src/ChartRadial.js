@@ -11,7 +11,7 @@ export const ChartRadial = () => {
             startAngle={180}
             endAngle={-180}
         >
-            <RadialBar minAngle={15} background clockWise={false} dataKey='uv' />
+            <RadialBar minAngle={15} background clockWise={true} dataKey='uv' />
             <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' align="right" />
             <Tooltip />
         </RadialBarChart>

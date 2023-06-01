@@ -16,6 +16,32 @@
     margin-top: 169px;
     align-items: center;
 }
-.recharts-legend-wrapper ul {
+
+.top {
+    width: 1057px;
+    height: 425px;
+    background-color: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:537px;
+    height: 541px;
+    background: #F3FDFF;
+    border-radius: 8px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:825px;
+    height: 541px;
+    background: #F3FDFF;
+    border-radius: 8px;
+    margin-left: 31px;
 }

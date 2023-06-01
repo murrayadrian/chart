@@ -1,18 +1,16 @@
 import React from 'react'
-import { CartesianGrid, Legend, LineChart, Tooltip, XAxis, YAxis, Line, ReferenceLine } from 'recharts'
+import { CartesianGrid, Legend, LineChart, Tooltip, XAxis, YAxis, Line, ReferenceLine, Area } from 'recharts'
 
 export const ChartLine = () => {
     return (
         <LineChart width={730} height={250} data={data}
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
+            <CartesianGrid strokeWidth={1} vertical={false} stroke="#DEDEE7" />
+            <XAxis tickLine={false} stroke="#DEDEE7" tick={{ fill: "#A4A4B3", fontSize: 12 }} />
+            <YAxis axisLine={false} tickLine={false} tickCount={5} stroke="#DEDEE7" tick={{ fill: "#A4A4B3", fontSize: 12 }} />
             <Tooltip />
-            <Legend />
             <ReferenceLine y={3000} label="Max" stroke="black" strokeDasharray="3 3" />
-            <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+            <Line type="monotone" dataKey="pv" stroke="red" />
         </LineChart>
     )
 }

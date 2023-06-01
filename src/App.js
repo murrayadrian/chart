@@ -4,11 +4,17 @@ import { ChartBar } from './ChartBar'
 function App() {
   return (
     <div className='container'>
+      <div className="top">
         <ChartLine/>
-    <div className="wrapper">
-        <ChartRadial/>
-        <ChartBar/>
-    </div>
+      </div>
+      <div className="wrapper">
+          <div className="left">
+            <ChartRadial/>
+          </div>
+          <div className="right">
+            <ChartBar/>
+          </div>
+      </div>
     </div>
   )
 }
